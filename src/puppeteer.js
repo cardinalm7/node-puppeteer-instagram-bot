@@ -29,6 +29,8 @@ let run = async function () {
 
     await page.click(cnf.selectors.login_button);
     await page.waitForNavigation();
+    // await page.waitFor(25000);
+
 
     // Loop through shuffled hashtags
     let hashtags = shuffle(cnf.hashtags);

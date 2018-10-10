@@ -1,16 +1,18 @@
 {
-  "username": "YOUR USERNAME",
-  "password": "YOUR PASSWORD",
+  "username": "poursh",
+  "password": "Sv@nd@1111",
   "hashtags": [
-    "love", "instagood", "me", "photooftheday", "instamood", "instadaily", "summer", "smile", "pretty", "food",
-    "funny", "beach", "bored", "life", "cool", "art", "sunset", "family", "followback"
+    "bear", "music", "singing", "love", "gay", "instagay", "muscle", "spirituality", "rumi", "aa", "musclebear", 
+    "piano", "instaman", "composer", "hairy", "hairyman", "hairymen", "beast", "beastman", "software", "otter", 
+    "soul", "fuzzy", "pop", "songwriter", "pecs", "hairymuscle", "beard", "beardedman", "gaybeard", "persian",
+    "stud", "gaybear", "gaywolf", "art"
   ],
   "settings": {
     "run_every_x_hours": 1,
     "like_ratio": 0.75,
-    "follow_ratio": 0.25,
+    "follow_ratio": 0.025,
     "do_unfollows": true,
-    "unfollow_after_days": 2,
+    "unfollow_after_days": 12,
     "headless": true
   },
   "selectors": {
