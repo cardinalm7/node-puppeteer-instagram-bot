@@ -50,7 +50,7 @@ let run = async function () {
                 await page.click('div:nth-child(4) > div > div:nth-child(' + r + ') > div:nth-child(' + c + ') > a').catch(() => {
                     br = true;
                 });
-                await page.waitFor(2250 + Math.floor(Math.random() * 250));
+                await page.waitFor(2250 + Math.floor(Math.random() * 2500));
                 if (br) continue;
 
                 // Get post info
@@ -72,7 +72,7 @@ let run = async function () {
                 if (hasEmptyHeart !== null && Math.random() < cnf.settings.like_ratio) {
                     await page.click(cnf.selectors.post_like_button);
                     console.log('---> like for ' + username);
-                    await page.waitFor(10000 + Math.floor(Math.random() * 5000));
+                    await page.waitFor(100000 + Math.floor(Math.random() * 5000));
                 }
 
                 // Decide to follow user
@@ -114,7 +114,7 @@ let run = async function () {
 
             let user = unfollows[n];
             await page.goto('https://www.instagram.com/' + user + '/?hl=en');
-            await page.waitFor(1500 + Math.floor(Math.random() * 500));
+            await page.waitFor(15000 + Math.floor(Math.random() * 5000));
 
             let followStatus = await page.evaluate(x => {
                 let element = document.querySelector(x);
@@ -127,7 +127,7 @@ let run = async function () {
                 await page.waitFor(750);
                 await page.click(cnf.selectors.user_unfollow_confirm_button);
                 ops.unFollow(user);
-                await page.waitFor(15000 + Math.floor(Math.random() * 5000));
+                await page.waitFor(150000 + Math.floor(Math.random() * 5000));
             } else {
                 console.log('---> archive ' + user);
                 ops.unFollow(user);
