@@ -10,8 +10,8 @@
   "settings": {
     "run_every_x_hours": 1,
     "like_ratio": 0.75,
-    "follow_ratio": 0.025,
-    "do_unfollows": true,
+    "follow_ratio": 0,
+    "do_unfollows": false,
     "unfollow_after_days": 12,
     "headless": true
   },
