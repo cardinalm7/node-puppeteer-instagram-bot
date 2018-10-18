@@ -13,7 +13,7 @@
     "follow_ratio": 0,
     "do_unfollows": false,
     "unfollow_after_days": 12,
-    "headless": false
+    "headless": true
   },
   "selectors": {
     "home_to_login_button": ".izU2O a",
